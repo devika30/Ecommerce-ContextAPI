@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.productDivEachCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  overflow-y: scroll;
+}
+
+.cartItemDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  box-shadow: 5px 10px #dbdbdb;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 30vw;
+}
+
+.productDetailsOnCart p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.inputForValueInCart {
+  width: 3vw;
+  text-align: center;
+}
+
+.imageDiv {
+  height: 20vh;
+  width: 10vw;
+}
+
+.productImg {
+  height: 100%;
+  width: 100%;
+}
+
+.valueInCartItemDiv {
+  display: flex;
+}
+
+.changeItemOnBtn {
+  padding: 2px;
+  width: 15px;
+  height: 3vh;
+}
+
+.subTotalClass {
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.btnsOnCart {
+  display: flex;
+  justify-content: space-between;
+}
+.subTotalClass p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.btnsOnCart button {
+  margin: 10px;
+  background-color: bisque;
+  padding: 10px;
+  width: 12vw;
+}
+
+.btnsOnCart button .urls {
+  color: black;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+  .btnsOnCart {
+    flex-direction: column;
+  }
+  .btnsOnCart button {
+    width: 100%;
+  }
+  .imageDiv {
+    width: 100%;
+  }
+  .cartItemDiv{
+    padding: 35px;
+    width: 70vw;
+  }
+}

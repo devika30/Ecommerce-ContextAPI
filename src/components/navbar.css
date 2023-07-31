@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navBarContainer{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(255, 238, 161);
+    max-height: 15vh;
+}
+
+.shopDiv{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.navLinks{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+}
+
+.navLinks:hover{
+    background-color: rgb(255, 169, 40);
+    padding: 10px;
+    text-decoration: underline;
+}

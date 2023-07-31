@@ -4,19 +4,29 @@ import { ShopContext } from "../../context/shopContext";
 function Product(props) {
   const { id, productName, price, productImage } = props.data;
   const { addToCart, cartItems } = useContext(ShopContext);
-  const cartItemAmount=cartItems[id]
+  const cartItemAmount = cartItems[id];
   return (
     <div>
       <React.Fragment key={id}>
         <div className="eachItemDiv">
-          <div className="imageDiv">
+          <div className="imageDiv1">
             <img src={productImage} className="productImg" />
           </div>
           <div className="productDetailsDiv">
-            <p>{productName}</p>
-            <p>${price}</p>
+            <div>
+              {" "}
+              <p>{productName}</p>
+            </div>
+            <br />
+            <div>
+              {" "}
+              <p>${price}</p>
+            </div>
           </div>
-          <button onClick={() => addToCart(id)}>Add to Cart {cartItemAmount>0?cartItemAmount:''}</button>
+
+          <button className="addToCartButton" onClick={() => addToCart(id)}>
+            Add to Cart {cartItemAmount > 0 ? cartItemAmount : ""}
+          </button>
         </div>
       </React.Fragment>
     </div>
